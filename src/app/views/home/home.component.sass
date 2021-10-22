@@ -1,0 +1,36 @@
+// Main alignment    
+$aligment: center
+
+// Form background color
+$mainColor: #FFFFFF
+
+// Gradient colors
+$gradHigh: rgba(106,38,255,1)
+$gradLow: rgba(145,19,255,1)
+
+.bgGradient
+    background: $gradHigh
+    background: linear-gradient(120deg, $gradHigh 0%, $gradLow 100%)
+
+.alignCenter
+    align-items: $aligment
+    justify-content: $aligment
+    text-align: $aligment
+
+.mainContainer
+    width: 100vw
+    height: 100vh
+    display: flex
+
+.wipText
+    color: $mainColor
+    font-size: 55px
+
+.buttonAlign
+    display: inline-block
+
+// Override some default mat-flat-button values
+.mat-flat-button
+    width: 225px
+    margin: 15px 15px 15px
+    // box-shadow: 1px 1px 4px

@@ -1,0 +1,53 @@
+$shadow: 5px 5px 20px #620d94
+$justification: center
+
+.bg-grad
+    background: rgb(106,38,255)
+    background: linear-gradient(120deg, rgba(106,38,255,1) 0%, rgba(145,19,255,1) 100%)
+
+.center
+    align-items: $justification
+    justify-content: $justification
+    text-align: $justification
+
+.container
+    width: 100vw
+    height: 100vh
+    display: flex
+
+.icon
+    margin: 40px 30px 40px
+    font-size: 25px
+    font-weight: bold
+
+.formBg
+    width: 400px
+    height: 500px
+    box-shadow: $shadow
+    background-color: #FFFFFF
+
+.margin
+    margin: 10px 10px 10px
+
+.marginForm
+    margin: 10px 10px 10px
+
+.formCenter
+    display: inline-block
+    height: 96%
+
+.mat-flat-button
+    width: 225px
+    margin: 5px 5px 5px
+    // box-shadow: 1px 1px 4px
+
+input[type="date"]::-webkit-calendar-picker-indicator 
+    display: none
+    -webkit-appearance: none
+
+:host ::ng-deep .mat-form-field-wrapper
+    margin: 0 !important
+    padding: 0
+
+p
+    margin: 0px 0px 35px

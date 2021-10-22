@@ -1,0 +1,69 @@
+// Form card shadow effect
+$shadow: 5px 5px 20px #620d94
+
+// Main alignment    
+$aligment: center
+
+// Form background color
+$formCardColor: #FFFFFF
+
+// Gradient colors
+$gradHigh: rgba(106,38,255,1)
+$gradLow: rgba(145,19,255,1)
+
+.bgGradient
+    background: $gradHigh
+    background: linear-gradient(120deg, $gradHigh 0%, $gradLow 100%)
+
+.alignCenter
+    align-items: $aligment
+    justify-content: $aligment
+    text-align: $aligment
+
+.mainContainer
+    width: 100vw
+    height: 100vh
+    display: flex
+
+.formHeader
+    margin: 70px 30px 70px // 40 30 40 old values
+    font-size: 25px
+    font-weight: bold
+
+.formCard
+    width: 400px
+    height: 500px
+    box-shadow: $shadow
+    border-radius: 10px
+    background-color: $formCardColor
+
+.spacedMargin
+    margin: 10px 10px 10px
+
+.formSpacedMargin
+    margin: 10px 10px 10px
+
+.formAlignCenter
+    display: inline-block
+    height: 96%
+
+// Override some default mat-flat-button values
+.mat-flat-button
+    width: 225px
+    margin: 5px 5px 5px
+    // box-shadow: 1px 1px 4px
+
+.inputField
+    margin: 0px 10px 40px
+
+// Remove the default margin and padding from {mat-form-field}
+:host ::ng-deep .mat-form-field-wrapper
+    margin: 0 !important
+    padding: 0
+
+// input[type="date"]::-webkit-calendar-picker-indicator 
+//     display: none
+//     -webkit-appearance: none
+
+// p
+//     margin: 0px 0px 35px

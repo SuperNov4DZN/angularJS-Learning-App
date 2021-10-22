@@ -1,0 +1,30 @@
+<div class='mainContainer alignCenter bgGradient'>
+    <div class='formCard alignCenter'>
+        <div class="spacedMargin formAlignCenter">
+            <div class='formHeader alignCenter'>
+                LOGIN
+            </div>
+            <form class="formSpacedMargin" name='loginForm'>
+                <div class="inputField">
+                    <mat-form-field appearance="outline">
+                        <mat-label>E-mail</mat-label>
+                        <input matInput placeholder='example@email.com' type="email" name="email" id="idEmail">
+                        <mat-icon matSuffix>email</mat-icon>
+                        <!-- <mat-hint>Digite seu nome completo.</mat-hint> -->
+                    </mat-form-field>
+                </div>
+                <div class="inputField">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Senha</mat-label>
+                        <input matInput placeholder='Sua senha' type="password" name="secret" id="idSecret">
+                        <mat-icon matSuffix>lock</mat-icon>
+                        <!-- <mat-hint>Insira sua data de nascimento.</mat-hint> -->
+                    </mat-form-field>
+                </div>
+            </form>
+            <div class="spacedMargin">
+                <button mat-flat-button color='primary' (click)="login()">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
