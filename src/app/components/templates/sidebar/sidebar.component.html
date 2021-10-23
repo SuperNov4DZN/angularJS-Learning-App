@@ -1,0 +1,21 @@
+<mat-sidenav-container class="container fixed">
+    <mat-sidenav #sidenav class="sideBar" mode="side" fixedInViewport="true" opened="true">
+        <nav class="nav">
+            <div class="navList">
+                <li *ngFor='let itens of menuItens' class="{{itens.class}}">
+                    <a class="navLink" [routerLink]="[itens.path]">
+                        <mat-icon class="navIcon">{{itens.icon}}</mat-icon>
+                        <p class="navTitle">- {{itens.title}}</p>
+                    </a>
+                </li>
+            </div>
+            <a class="navLink" routerLink="/login">
+                <mat-icon class="navIcon">logout</mat-icon>
+                <p class="navTitle">- SAIR</p>
+            </a>
+        </nav>
+    </mat-sidenav>
+    <!-- <div class="info">
+        <router-outlet></router-outlet>
+    </div> -->
+</mat-sidenav-container>

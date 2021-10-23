@@ -1,0 +1,62 @@
+// navbar shadow effect
+$shadow: 5px 5px 20px #620d94
+
+// Main alignment
+$aligment: right
+
+$mainContentColor: #FFFFFF
+
+// Gradient colors
+$navBarGradHigh: rgba(106,38,255,1)
+$navBarGradLow: rgba(145,19,255,1)
+
+.navBar
+    background-color: #FFFFFF
+    // background: $navBarGradHigh
+    // background: linear-gradient(120deg, $navBarGradHigh 0%, $navBarGradLow 100%)
+    height: 100px
+    color: $mainContentColor
+    justify-content: $aligment
+    box-shadow: $shadow
+
+.fixed
+    position: fixed !important
+    z-index: 0 !important
+
+.info
+    display: flex
+    justify-content: $aligment
+    width: 100%
+
+.content
+    display: flex
+    align-items: center
+
+.navBarFields
+    width: 200px
+    background-color: $navBarGradHigh
+    border-radius: 20px
+    height: 30px
+    display: flex
+    justify-content: center
+
+.navBarFields>p
+    font-size: 20px
+    text-align: center
+
+.userIcon
+    width: 60px
+    background-color: $navBarGradHigh
+    border-radius: 60px
+    height: 60px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.userIcon>p
+    text-align: center
+    font-size: 40px
+    margin: 0px
+
+.mainMargin
+    margin: 0px 15px 0px

@@ -17,13 +17,19 @@ import { LoginComponent } from './auth/login/login.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import { HomeComponent } from './views/home/home.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { SidebarComponent } from './components/templates/sidebar/sidebar.component';
+import { NavbarComponent } from './components/templates/navbar/navbar.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastroComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    SidebarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +42,8 @@ import { HomeComponent } from './views/home/home.component';
     MatListModule,
     MatCommonModule,
     MatSnackBarModule,
+    MatToolbarModule,
+    MatSidenavModule,
     MatFormFieldModule
   ],
   providers: [

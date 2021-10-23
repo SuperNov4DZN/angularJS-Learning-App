@@ -1,0 +1,17 @@
+<app-sidebar></app-sidebar>
+<mat-toolbar class="navBar fixed">
+    <div class="info">
+        <div class="content">
+            <!-- <button mat-raised-button (click)="toggleSideNav()">Toggle drawer</button> -->
+            <div class="navBarFields mainMargin">
+                <p>{{user}}</p>
+            </div>
+            <div class="navBarFields mainMargin">
+                <p>{{data | date: 'dd/MM/YYYY - HH:mm'}}</p>
+            </div>
+            <div class="userIcon mainMargin">
+                <p>A</p>
+            </div>
+        </div>
+    </div>
+</mat-toolbar>
