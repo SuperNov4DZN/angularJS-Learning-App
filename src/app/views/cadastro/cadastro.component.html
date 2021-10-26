@@ -2,37 +2,37 @@
     <div class='formBg center'>
         <div class="margin formCenter">
             <div class='icon center'>
-                LOGIN / REGISTRO
+                CADASTRAR PRODUTO
             </div>
-            <form class="marginForm" name='cadastroUser'>
+            <form class="marginForm" name='cadastroProduct' #cadastroProduct="ngForm">
                 <p>
                     <mat-form-field appearance="outline">
-                        <mat-label>Nome Completo</mat-label>
-                        <input matInput placeholder='Seu nome completo' type="text" name="inName" id="idName">
-                        <mat-icon matSuffix>person</mat-icon>
+                        <mat-label>Nome</mat-label>
+                        <input matInput placeholder='Nome do produto' type="text" [(ngModel)]="produtos.name" [ngModelOptions]="{standalone:true}" id="idName">
+                        <mat-icon matSuffix>receipt</mat-icon>
                         <!-- <mat-hint>Digite seu nome completo.</mat-hint> -->
                     </mat-form-field>
                 </p>
                 <p>
                     <mat-form-field appearance="outline">
-                        <mat-label>E-mail</mat-label>
-                        <input matInput placeholder='example@email.com' type="email" name="inEmail" id="idEmail">
-                        <mat-icon matSuffix>email</mat-icon>
+                        <mat-label>Preço</mat-label>
+                        <input matInput placeholder='Valor do produto' type="text" [(ngModel)]="produtos.price" [ngModelOptions]="{standalone:true}"id="idPrice">
+                        <mat-icon matSuffix>attach_money</mat-icon>
                         <!-- <mat-hint>Digite o nome da sua mãe.</mat-hint> -->
                     </mat-form-field>
                 </p>
-                <p>
+                <!-- <p>
                     <mat-form-field appearance="outline">
                         <mat-label>Senha</mat-label>
                         <input matInput placeholder='Sua senha' type="password" name="inSenha" id="idSenha">
                         <mat-icon matSuffix>lock</mat-icon>
-                        <!-- <mat-hint>Insira sua data de nascimento.</mat-hint> -->
+                        <mat-hint>Insira sua data de nascimento.</mat-hint>
                     </mat-form-field>
-                </p>
+                </p> -->
             </form>
             <div class="margin">
-                <button mat-flat-button color='primary'>Login</button> <!--(click)="coletarDadosForm()"-->
-                <button mat-flat-button color='accent'>Registrar-se</button>
+                <button mat-flat-button color='primary' (click)="coletarDadosForm()">Enviar</button> <!--(click)="coletarDadosForm()"-->
+                <!-- <button mat-flat-button color='accent'>Registrar-se</button> -->
             </div>
         </div>
     </div>

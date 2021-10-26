@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Produtos } from 'src/app/models/produtos.model';
+import { ProdutosService } from 'src/app/services/produtos.service';
 
 @Component({
   templateUrl: './cadastro.component.html',
@@ -6,17 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
-  constructor() { }
+  produtos: Produtos = {
+    name: '',
+    price: ''
+  }
+
+  constructor(private produtosService: ProdutosService) { }
 
   ngOnInit(): void {
   }
 
-  coletarDadosForm() {
-
-    const name = (<HTMLInputElement>document.getElementById('idName')).value
-    const nMae = (<HTMLInputElement>document.getElementById('idNmae')).value
-    const dtNasc = (<HTMLInputElement>document.getElementById('idDtnasc')).value
-
+  coletarDadosForm(): void {
+    this.produtosService.create(this.produtos).subscribe(() => {
+    })
   }
-
 }
