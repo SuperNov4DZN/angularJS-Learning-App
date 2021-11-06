@@ -11,7 +11,8 @@ declare interface RouterInfo {
 }
 
 export const ROUTES: RouterInfo[] = [
-  {path: '/cadastro', title:'CADASTRO', icon:'add_box', class:''}
+  {path: '/cadastro', title:'CADASTRO', icon:'add_box', class:''},
+  {path: '/produtos', title:'PRODUTOS', icon:'view_list', class:''}
 ];
 
 @Component({

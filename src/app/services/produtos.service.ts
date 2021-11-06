@@ -20,4 +20,8 @@ export class ProdutosService {
   create(produtos: Produtos): Observable<Produtos> {
     return this.client.post<Produtos>(this.baseUrl, produtos)
   }
+
+  read(): Observable<Produtos[]> {
+    return this.client.get<Produtos[]>(this.baseUrl)
+  }
 }

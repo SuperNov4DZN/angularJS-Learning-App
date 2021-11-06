@@ -23,6 +23,11 @@ import { NavbarComponent } from './components/templates/navbar/navbar.component'
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ProdutosReadComponent } from './views/produtos/produtos-read/produtos-read.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { ProdutosAddComponent } from './views/produtos/produtos-add/produtos-add.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,9 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     HomeComponent,
     SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProdutosReadComponent,
+    ProdutosAddComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +55,10 @@ import { FormsModule } from '@angular/forms';
     MatSidenavModule,
     MatFormFieldModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [
     {provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 1500}}
