@@ -28,6 +28,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ProdutosAddComponent } from './views/produtos/produtos-add/produtos-add.component';
+import { ProdutosEditComponent } from './views/produtos/produtos-edit/produtos-edit.component';
+import { ProdutosViewComponent } from './views/produtos/produtos-view/produtos-view.component';
+import { ProdutosDeleteComponent } from './views/produtos/produtos-delete/produtos-delete.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { ProdutosAddComponent } from './views/produtos/produtos-add/produtos-add
     SidebarComponent,
     NavbarComponent,
     ProdutosReadComponent,
-    ProdutosAddComponent
+    ProdutosAddComponent,
+    ProdutosEditComponent,
+    ProdutosViewComponent,
+    ProdutosDeleteComponent
   ],
   imports: [
     BrowserModule,

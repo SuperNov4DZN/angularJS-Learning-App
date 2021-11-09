@@ -23,7 +23,7 @@ export class ProdutosReadComponent implements AfterViewInit {
   subtitle = 'Listagem de produtos em estoque'
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name', 'price'];
+  displayedColumns = ['id', 'name', 'price', 'actions'];
 
   constructor(private router:Router, private produtosService: ProdutosService) {
     // this.dataSource = new ProdutosReadDataSource();
